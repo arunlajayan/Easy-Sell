@@ -3,6 +3,7 @@ import { Nunito, Josefin_Sans } from 'next/font/google';
 import './globals.css';
 import Footer from '@/components/footer';
 import Header from '@/components/header';
+import { getCanonicalUrl } from '@/utils';
 
 
 const inter = Nunito({ subsets: ['latin'] });
@@ -12,7 +13,12 @@ export const metadata: Metadata = {
   title: 'Easy Sell',
   description:
     'Discover the power of simplicity with Easy Sell – the ultimate solution for effortless selling products. Unlock convenience and boost your sales.',
- 
+  openGraph: {
+    images: ["/asset/og-image.png"]
+  },
+  alternates: {
+    canonical: getCanonicalUrl(),
+  },
 };
 
 export default function RootLayout({
