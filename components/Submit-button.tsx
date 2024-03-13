@@ -6,10 +6,11 @@ function SubmitButton() {
   return (
     <button
       type="submit"
-      className="bg-orange-900 hover:bg-orange-950 text-white w-full px-6 py-3 rounded-md"
+      
+      className={pending ? "btn btn-ghost" : "btn btn-active btn-primary"}
       aria-disabled={pending}
     >
-      {pending ? 'Loading...' : 'Add'}
+      {pending ? 'Loading...' : 'Add Product'}
     </button>
   );
 }

@@ -18,13 +18,13 @@ const UploadFormPage: React.FC = () => {
 
   return (
     <div className="px-12 pt-24 pb-12 min-h-screen max-w-[100rem] mx-auto flex gap-56">
-      <div>
-        <h2 className="text-2xl lg:text-4xl mb-4 uppercase pt-12">
+      <div className='card bg-base-100 h-60'>
+        <h2 className="text-2xl lg:text-4xl mb-4 uppercase p-12">
           Sell your Item!
         </h2>
-        <p className="text-xl">
+        {/* <p className="text-xl ">
           Enter details in this form to start selling your item.
-        </p>
+        </p> */}
       </div>
       <div className="mx-auto w-full h-full p-12 rounded-lg border-2 border-gray-500 border-opacity-10 shadow-lg bg-gray-953">
         {state?.type === 'error' && (
