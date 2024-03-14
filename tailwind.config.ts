@@ -20,9 +20,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("daisyui")],
-  daisyui: {
-    themes: ["acid"],
-  },
+  plugins: [],
+  
 };
 export default config;
