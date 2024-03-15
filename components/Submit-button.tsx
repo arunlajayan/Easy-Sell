@@ -7,7 +7,7 @@ function SubmitButton() {
     <button
       type="submit"
       
-      className={pending ? "btn btn-ghost" : "btn btn-active btn-primary"}
+      className={pending ? "bg-orange-900 text-white w-full px-6 py-3 rounded-md" : " bg-orange-950 text-white w-full px-6 py-3 rounded-md"}
       aria-disabled={pending}
     >
       {pending ? 'Loading...' : 'Add Product'}
